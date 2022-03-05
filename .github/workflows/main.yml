@@ -33,4 +33,4 @@ jobs:
       - name: Install Surge
         run: npm install --global surge
       - name: Deploy using Surge
-        run: surge ./ https://portfolio-spa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build https://portfolio-spa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
