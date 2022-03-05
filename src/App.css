@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body {
+  background: #111;
+  scroll-behavior: smooth;
+}
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary: #0cbcff;
+  --font-base: "Poppins", sans-serif;
+  --color-white: #fff;
+  --color-black: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(29, 29, 29);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 0.5em;
+  min-height: 100px;
+}
+.container {
+  max-width: 1240px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p__poppins {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__button {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.app__headsidetext {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line {
+  height: 1px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.13);
+  margin: 2rem auto;
 }

@@ -1,0 +1,51 @@
+.portfolio__container {
+  max-width: 1140px;
+  margin: auto;
+}
+.portfolio__tabs {
+  text-align: center;
+}
+
+.portfolio__tabs button {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 18px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: var(--color-primary) !important;
+}
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.portfolio__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  list-style: none;
+}
+
+.portfolio__item li {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.portfolio__item li img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: center top;
+}

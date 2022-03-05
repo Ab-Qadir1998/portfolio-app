@@ -1,0 +1,102 @@
+.app__about-wrapp {
+  padding: 6rem 3rem;
+}
+
+.app__about-content_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__about-info {
+  flex: 1;
+}
+
+.app__about-exp {
+  flex: 1;
+}
+
+.app__personal-info_wrapper {
+  margin: 2rem 0;
+}
+
+.app__personal_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app__personal_list li {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.app__personal_list li a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.app__exp-box {
+  border: 1px solid rgba(255, 255, 255, 0.116);
+  margin: 20px 0;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  max-width: 300px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.exp__title {
+  font-size: 40px;
+  color: var(--color-primary);
+  font-family: var(--font-base);
+}
+
+.exp__subtitle {
+  color: var(--color-white);
+  font-family: var(--font-base);
+}
+
+.exp_upper-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__exp-box {
+  flex: 1;
+  margin: 10px;
+}
+
+.exp_under-row .app__exp-box {
+  max-width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  .app__about-content_wrapper {
+    flex-direction: column;
+  }
+  .app__headsidetext {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .app__personal_list li {
+    width: 100%;
+  }
+  .app__personal_list {
+    flex-direction: column;
+  }
+  .app__about-wrapp {
+    padding: 2rem 1rem;
+  }
+}
