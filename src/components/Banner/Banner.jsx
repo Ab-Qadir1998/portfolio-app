@@ -11,7 +11,7 @@ const Banner = () => {
         </div>
         <div className="banner__content">
           <h1 className="app__headtext">
-            <strong>Abdul Qadir Khan</strong> FrontEnd Developer
+            <strong>Abdul Qadir</strong> FrontEnd Developer
           </h1>
           <p className="p__poppins">
             I'm a front‑end developer focused on crafting clean & user‑friendly
