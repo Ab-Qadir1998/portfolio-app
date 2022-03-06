@@ -48,4 +48,10 @@
   width: 300px;
   object-fit: cover;
   object-position: center top;
+  transition: 4s ease-in-out;
+}
+
+
+.portfolio__item li:hover img {
+  object-position: center bottom;
 }
