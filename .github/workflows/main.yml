@@ -6,7 +6,7 @@ name: portfolio-application
 on:
   # Triggers the workflow on push or pull request events but only for the portfolio-app branch
   push:
-    branches: [ portfolio-app ]
+    branches: [ master, portfolio-app ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,6 +27,8 @@ jobs:
       uses: actions/setup-node@v2-beta
       with: 
         version: 14
+
+      command: npm install
       #Create a build
     - name: Creating build
       run: npm run build
